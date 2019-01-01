@@ -5,8 +5,8 @@
 	<groupId>org.logicware</groupId>
 	<artifactId>prolobjectlink-jpi-jpl</artifactId>
 	<version>1.0.0</version>
-	<name>prolobjectlink-jpi-jpl7</name>
-	<description>prolobjectlink-jpl7</description>
+	<name>prolobjectlink-jpi-jpl</name>
+	<description>prolobjectlink-jpl</description>
 
 	<url>http://www.logicware.org</url>
 	<inceptionYear>2012</inceptionYear>

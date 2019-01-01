@@ -24,26 +24,27 @@ import static org.logicware.prolog.PrologTermType.LIST_TYPE;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import jpl.Compound;
-import jpl.Query;
-import jpl.Term;
 import org.logicware.AbstractIterator;
 import org.logicware.prolog.PrologList;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologTerm;
 
+import jpl.Atom;
+import jpl.Compound;
+import jpl.Term;
+
 public class JplList extends JplTerm implements PrologList {
 
-	public static final Term EMPTY;
+	public static final Term EMPTY = new Atom("[]");
 
-	static {
-
-		Query query4 = new Query("X=[]");
-		query4.open();
-		EMPTY = (Term) query4.getSolution().get("X");
-		query4.close();
-
-	}
+//	static {
+//
+//		Query query4 = new Query("X=[]");
+//		query4.open();
+//		EMPTY = (Term) query4.getSolution().get("X");
+//		query4.close();
+//
+//	}
 
 	protected JplList(PrologProvider provider) {
 		super(LIST_TYPE, provider, EMPTY);
