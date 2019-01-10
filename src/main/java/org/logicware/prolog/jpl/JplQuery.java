@@ -26,14 +26,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import jpl.Query;
-import jpl.Term;
-import jpl.Util;
-import jpl.Variable;
 import org.logicware.prolog.AbstractEngine;
 import org.logicware.prolog.AbstractQuery;
 import org.logicware.prolog.PrologQuery;
 import org.logicware.prolog.PrologTerm;
+
+import jpl.Query;
+import jpl.Term;
+import jpl.Util;
+import jpl.Variable;
 
 public final class JplQuery extends AbstractQuery implements PrologQuery {
 

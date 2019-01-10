@@ -21,9 +21,10 @@ package org.logicware.prolog.jpl;
 
 import static org.logicware.prolog.PrologTermType.NIL_TYPE;
 
-import jpl.Atom;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologTerm;
+
+import jpl.Atom;
 
 public final class JplNil extends JplTerm implements PrologTerm {
 

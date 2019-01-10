@@ -27,10 +27,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import jpl.Term;
-import org.logicware.ArrayIterator;
-import org.logicware.RuntimeError;
 import org.logicware.prolog.PrologClauses;
+import org.worklogic.ArrayIterator;
+import org.worklogic.RuntimeError;
+
+import jpl.Term;
 
 public final class JplProgram extends AbstractSet<List<Term>> {
 

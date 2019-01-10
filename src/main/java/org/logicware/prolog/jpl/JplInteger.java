@@ -21,11 +21,12 @@ package org.logicware.prolog.jpl;
 
 import static org.logicware.prolog.PrologTermType.INTEGER_TYPE;
 
-import jpl.Integer;
-import jpl.Term;
 import org.logicware.prolog.PrologInteger;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologTerm;
+
+import jpl.Integer;
+import jpl.Term;
 
 public class JplInteger extends JplNumber implements PrologInteger {
 

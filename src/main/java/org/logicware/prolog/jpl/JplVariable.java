@@ -21,13 +21,14 @@ package org.logicware.prolog.jpl;
 
 import static org.logicware.prolog.PrologTermType.VARIABLE_TYPE;
 
-import jpl.Variable;
 import org.logicware.prolog.ArityError;
 import org.logicware.prolog.FunctorError;
 import org.logicware.prolog.IndicatorError;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologTerm;
 import org.logicware.prolog.PrologVariable;
+
+import jpl.Variable;
 
 public class JplVariable extends JplTerm implements PrologVariable {
 

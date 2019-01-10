@@ -21,11 +21,12 @@ package org.logicware.prolog.jpl;
 
 import static org.logicware.prolog.PrologTermType.STRUCTURE_TYPE;
 
-import jpl.Compound;
-import jpl.Term;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologStructure;
 import org.logicware.prolog.PrologTerm;
+
+import jpl.Compound;
+import jpl.Term;
 
 public class JplStructure extends JplTerm implements PrologStructure {
 

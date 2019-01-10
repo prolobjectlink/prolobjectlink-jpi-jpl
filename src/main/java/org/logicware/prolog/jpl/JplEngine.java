@@ -19,7 +19,7 @@
  */
 package org.logicware.prolog.jpl;
 
-import static org.logicware.logging.LoggerConstants.IO;
+import static org.worklogic.logging.LoggerConstants.IO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -33,8 +33,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.logicware.ArrayIterator;
-import org.logicware.logging.LoggerUtils;
 import org.logicware.prolog.AbstractEngine;
 import org.logicware.prolog.PredicateIndicator;
 import org.logicware.prolog.PrologClause;
@@ -47,6 +45,8 @@ import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologQuery;
 import org.logicware.prolog.PrologTerm;
 import org.logicware.prolog.PrologTermType;
+import org.worklogic.ArrayIterator;
+import org.worklogic.logging.LoggerUtils;
 
 import jpl.Atom;
 import jpl.Query;
@@ -58,6 +58,7 @@ import jpl.Util;
  * @author Jose Zalacain
  * @since 1.0
  */
+/** @author Jose Zalacain @since 1.0 */
 public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 
 	// used only for findall list result

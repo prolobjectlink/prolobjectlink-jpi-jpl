@@ -22,8 +22,6 @@ package org.logicware.prolog.jpl;
 import java.util.ArrayList;
 import java.util.List;
 
-import jpl.Term;
-import jpl.Util;
 import org.logicware.prolog.AbstractProvider;
 import org.logicware.prolog.PrologAtom;
 import org.logicware.prolog.PrologConverter;
@@ -37,6 +35,10 @@ import org.logicware.prolog.PrologStructure;
 import org.logicware.prolog.PrologTerm;
 import org.logicware.prolog.PrologVariable;
 
+import jpl.Term;
+import jpl.Util;
+
+/** @author Jose Zalacain @since 1.0 */
 public abstract class JplProvider extends AbstractProvider implements PrologProvider {
 
 	public JplProvider(PrologConverter<Term> adapter) {

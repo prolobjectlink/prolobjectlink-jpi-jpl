@@ -31,6 +31,7 @@ import org.logicware.prolog.PrologProvider;
 
 import jpl.Term;
 
+/** @author Jose Zalacain @since 1.0 */
 public abstract class JplNumber extends JplTerm implements PrologNumber {
 
 	protected JplNumber(int type, PrologProvider provider, Term value) {

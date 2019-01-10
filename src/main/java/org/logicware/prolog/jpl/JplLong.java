@@ -21,9 +21,10 @@ package org.logicware.prolog.jpl;
 
 import static org.logicware.prolog.PrologTermType.LONG_TYPE;
 
-import jpl.Integer;
 import org.logicware.prolog.PrologLong;
 import org.logicware.prolog.PrologProvider;
+
+import jpl.Integer;
 
 public final class JplLong extends JplInteger implements PrologLong {
 

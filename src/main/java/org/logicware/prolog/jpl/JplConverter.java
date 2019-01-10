@@ -58,6 +58,7 @@ import jpl.Integer;
 import jpl.Term;
 import jpl.Variable;
 
+/** @author Jose Zalacain @since 1.0 */
 public abstract class JplConverter extends AbstractConverter<Term> implements PrologConverter<Term> {
 
 	public final PrologTerm toTerm(Term prologTerm) {
