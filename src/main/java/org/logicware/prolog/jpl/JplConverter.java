@@ -55,6 +55,7 @@ import jpl.Atom;
 import jpl.Compound;
 import jpl.Float;
 import jpl.Integer;
+import jpl.JPLException;
 import jpl.Term;
 import jpl.Variable;
 
@@ -83,7 +84,11 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 		} else if (prologTerm.isFloat()) {
 			return new JplFloat(provider, ((Float) prologTerm).floatValue());
 		} else if (prologTerm.isInteger()) {
-			return new JplInteger(provider, ((Integer) prologTerm).intValue());
+			try {
+				return new JplInteger(provider, ((Integer) prologTerm).intValue());
+			} catch (JPLException e) {
+				return new JplLong(provider, ((Integer) prologTerm).longValue());
+			}
 		} else if (prologTerm.isVariable()) {
 			String name = ((Variable) prologTerm).name();
 			PrologVariable variable = sharedVariables.get(name);
