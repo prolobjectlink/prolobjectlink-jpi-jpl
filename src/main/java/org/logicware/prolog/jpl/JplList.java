@@ -37,15 +37,6 @@ public class JplList extends JplTerm implements PrologList {
 
 	public static final Term EMPTY = new Atom("[]");
 
-//	static {
-//
-//		Query query4 = new Query("X=[]");
-//		query4.open();
-//		EMPTY = (Term) query4.getSolution().get("X");
-//		query4.close();
-//
-//	}
-
 	protected JplList(PrologProvider provider) {
 		super(LIST_TYPE, provider, EMPTY);
 	}
@@ -168,10 +159,6 @@ public class JplList extends JplTerm implements PrologList {
 			ptr = ptr.arg(2);
 			index++;
 			return term;
-		}
-
-		public void remove() {
-			throw new UnsupportedOperationException();
 		}
 
 	}
