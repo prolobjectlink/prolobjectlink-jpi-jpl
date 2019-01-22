@@ -168,8 +168,8 @@ public abstract class JplTerm extends AbstractTerm implements PrologTerm {
 				String key = e.getKey();
 				map.put(key, v);
 			}
-			query.close();
 		}
+		query.close();
 		return map;
 	}
 

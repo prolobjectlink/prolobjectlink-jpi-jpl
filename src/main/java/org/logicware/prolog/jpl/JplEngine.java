@@ -38,8 +38,6 @@ import org.logicware.prolog.PredicateIndicator;
 import org.logicware.prolog.PrologClause;
 import org.logicware.prolog.PrologEngine;
 import org.logicware.prolog.PrologIndicator;
-import org.logicware.prolog.PrologList;
-import org.logicware.prolog.PrologNumber;
 import org.logicware.prolog.PrologOperator;
 import org.logicware.prolog.PrologProvider;
 import org.logicware.prolog.PrologQuery;
@@ -229,31 +227,26 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 	}
 
 	public final Set<PrologOperator> currentOperators() {
-		PrologEngine engine = provider.newEngine();
 		Set<PrologOperator> operators = new HashSet<PrologOperator>();
-		String stringQuery = consultCacheComma + "findall(P/S/O,current_op(P,S,O)," + KEY + ")";
-		PrologQuery query = engine.query(stringQuery);
-		Map<String, PrologTerm>[] solution = query.allVariablesSolutions();
-		for (Map<String, PrologTerm> map : solution) {
-			for (PrologTerm operatorList : map.values()) {
-				if (!operatorList.isVariable() && operatorList.isList()) {
-					PrologList l = (PrologList) operatorList;
-					for (PrologTerm operator : l) {
+		String opQuery = consultCacheComma + "findall(P/S/O,current_op(P,S,O)," + KEY + ")";
+		Query query = new Query(opQuery);
+		if (query.hasSolution()) {
+			Term term = (Term) query.oneSolution().get(KEY);
+			Term[] termArray = term.toTermArray();
+			for (Term t : termArray) {
+				Term prio = t.arg(1).arg(1);
+				Term pos = t.arg(1).arg(2);
+				Term op = t.arg(2);
 
-						PrologTerm prio = operator.getArgument(0).getArgument(0);
-						PrologTerm pos = operator.getArgument(0).getArgument(1);
-						PrologTerm op = operator.getArgument(1);
+				int p = prio.intValue();
+				String s = pos.name();
+				String n = op.name();
 
-						int p = ((PrologNumber) prio).getIntValue();
-						String s = pos.getFunctor();
-						String n = op.getFunctor();
-
-						PrologOperator o = new JplOperator(p, s, n);
-						operators.add(o);
-					}
-				}
+				PrologOperator o = new JplOperator(p, s, n);
+				operators.add(o);
 			}
 		}
+		query.close();
 		return operators;
 	}
 

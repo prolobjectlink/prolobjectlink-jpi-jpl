@@ -34,18 +34,13 @@ import static org.logicware.prolog.PrologTermType.STRUCTURE_TYPE;
 import static org.logicware.prolog.PrologTermType.TRUE_TYPE;
 import static org.logicware.prolog.PrologTermType.VARIABLE_TYPE;
 
-import java.util.Map;
-
 import org.logicware.prolog.AbstractConverter;
 import org.logicware.prolog.PrologAtom;
 import org.logicware.prolog.PrologConverter;
 import org.logicware.prolog.PrologDouble;
-import org.logicware.prolog.PrologEngine;
 import org.logicware.prolog.PrologFloat;
 import org.logicware.prolog.PrologInteger;
-import org.logicware.prolog.PrologList;
 import org.logicware.prolog.PrologLong;
-import org.logicware.prolog.PrologQuery;
 import org.logicware.prolog.PrologStructure;
 import org.logicware.prolog.PrologTerm;
 import org.logicware.prolog.PrologVariable;
@@ -56,12 +51,13 @@ import jpl.Compound;
 import jpl.Float;
 import jpl.Integer;
 import jpl.JPLException;
+import jpl.Query;
 import jpl.Term;
 import jpl.Variable;
 
-/** 
- * @author Jose Zalacain 
- * @since 1.0 
+/**
+ * @author Jose Zalacain
+ * @since 1.0
  */
 public abstract class JplConverter extends AbstractConverter<Term> implements PrologConverter<Term> {
 
@@ -111,24 +107,22 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 
 			if (arity == 2) {
 				String key = "LIST";
-				PrologEngine engine = provider.newEngine();
-				String stringQuery = "findall(OP,current_op(_,_,OP)," + key + ")";
-				PrologQuery query = engine.query(stringQuery);
-				Map<String, PrologTerm>[] solution = query.allVariablesSolutions();
-				for (Map<String, PrologTerm> map : solution) {
-					for (PrologTerm operatorList : map.values()) {
-						if (!operatorList.isVariable() && operatorList.isList()) {
-							PrologList l = (PrologList) operatorList;
-							for (PrologTerm operator : l) {
-								if (operator.getFunctor().equals(functor)) {
-									Term left = compound.arg(1);
-									Term right = compound.arg(2);
-									return new JplStructure(provider, left, functor, right);
-								}
-							}
+				String opQuery = "findall(OP,current_op(_,_,OP)," + key + ")";
+				Query query = new Query(opQuery);
+				if (query.hasSolution()) {
+
+					Term term = (Term) query.oneSolution().get(key);
+					Term[] termArray = term.toTermArray();
+					for (Term termArray1 : termArray) {
+						if (termArray1.name().equals(functor)) {
+							Term left = compound.arg(1);
+							Term right = compound.arg(2);
+							return new JplStructure(provider, left, functor, right);
 						}
 					}
+
 				}
+				query.close();
 			}
 
 			for (int i = 0; i < arity; i++) {
