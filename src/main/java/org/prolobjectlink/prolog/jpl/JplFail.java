@@ -17,32 +17,23 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.ATOM_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.FAIL_TYPE;
 
-import org.logicware.prolog.PrologAtom;
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.Atom;
 
-public final class JplAtom extends JplTerm implements PrologAtom {
+public final class JplFail extends JplTerm implements PrologTerm {
 
-	public JplAtom(PrologProvider provider, String value) {
-		super(ATOM_TYPE, provider, new Atom(value));
-	}
-
-	public String getStringValue() {
-		return getFunctor();
-	}
-
-	public void setStringValue(String value) {
-		this.value = new Atom(value);
+	protected JplFail(PrologProvider provider) {
+		super(FAIL_TYPE, provider, new Atom("fail"));
 	}
 
 	public PrologTerm[] getArguments() {
-		return new JplAtom[0];
+		return new PrologTerm[0];
 	}
 
 	public int getArity() {

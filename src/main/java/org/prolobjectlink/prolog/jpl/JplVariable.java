@@ -17,16 +17,16 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.VARIABLE_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.VARIABLE_TYPE;
 
-import org.logicware.prolog.ArityError;
-import org.logicware.prolog.FunctorError;
-import org.logicware.prolog.IndicatorError;
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologTerm;
-import org.logicware.prolog.PrologVariable;
+import org.prolobjectlink.prolog.ArityError;
+import org.prolobjectlink.prolog.FunctorError;
+import org.prolobjectlink.prolog.IndicatorError;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologVariable;
 
 import jpl.Variable;
 

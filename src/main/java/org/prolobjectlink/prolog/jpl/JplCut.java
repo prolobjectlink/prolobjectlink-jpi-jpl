@@ -17,19 +17,19 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.NIL_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.CUT_TYPE;
 
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.Atom;
 
-public final class JplNil extends JplTerm implements PrologTerm {
+public final class JplCut extends JplTerm implements PrologTerm {
 
-	JplNil(PrologProvider provider) {
-		super(NIL_TYPE, provider, new Atom("nil"));
+	protected JplCut(PrologProvider provider) {
+		super(CUT_TYPE, provider, new Atom("!"));
 	}
 
 	public PrologTerm[] getArguments() {

@@ -17,10 +17,10 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.worklogic.logging.LoggerConstants.FILE_NOT_FOUND;
-import static org.worklogic.logging.LoggerConstants.IO;
+import static org.prolobjectlink.logging.LoggerConstants.FILE_NOT_FOUND;
+import static org.prolobjectlink.logging.LoggerConstants.IO;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -30,7 +30,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.worklogic.logging.LoggerUtils;
+import org.prolobjectlink.logging.LoggerUtils;
 
 import jpl.Term;
 import jpl.Util;

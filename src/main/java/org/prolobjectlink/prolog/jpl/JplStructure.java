@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.STRUCTURE_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.STRUCTURE_TYPE;
 
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologStructure;
-import org.logicware.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologStructure;
+import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.Compound;
 import jpl.Term;

@@ -17,21 +17,32 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.TRUE_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.ATOM_TYPE;
 
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologAtom;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologTerm;
 
-public final class JplTrue extends JplTerm implements PrologTerm {
+import jpl.Atom;
 
-	protected JplTrue(PrologProvider provider) {
-		super(TRUE_TYPE, provider, JPL_TRUE);
+public final class JplAtom extends JplTerm implements PrologAtom {
+
+	public JplAtom(PrologProvider provider, String value) {
+		super(ATOM_TYPE, provider, new Atom(value));
+	}
+
+	public String getStringValue() {
+		return getFunctor();
+	}
+
+	public void setStringValue(String value) {
+		this.value = new Atom(value);
 	}
 
 	public PrologTerm[] getArguments() {
-		return new PrologTerm[0];
+		return new JplAtom[0];
 	}
 
 	public int getArity() {

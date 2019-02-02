@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,10 +26,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import org.logicware.prolog.AbstractEngine;
-import org.logicware.prolog.AbstractQuery;
-import org.logicware.prolog.PrologQuery;
-import org.logicware.prolog.PrologTerm;
+import org.prolobjectlink.prolog.AbstractEngine;
+import org.prolobjectlink.prolog.AbstractQuery;
+import org.prolobjectlink.prolog.PrologQuery;
+import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.PrologException;
 import jpl.Query;

@@ -17,24 +17,24 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.CUT_TYPE;
-import static org.logicware.prolog.PrologTermType.DOUBLE_TYPE;
-import static org.logicware.prolog.PrologTermType.FLOAT_TYPE;
-import static org.logicware.prolog.PrologTermType.INTEGER_TYPE;
-import static org.logicware.prolog.PrologTermType.LONG_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.CUT_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.DOUBLE_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.FLOAT_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.INTEGER_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.LONG_TYPE;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.logicware.prolog.AbstractTerm;
-import org.logicware.prolog.PrologList;
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologQuery;
-import org.logicware.prolog.PrologTerm;
-import org.logicware.prolog.UnknownTermError;
+import org.prolobjectlink.prolog.AbstractTerm;
+import org.prolobjectlink.prolog.PrologList;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologQuery;
+import org.prolobjectlink.prolog.PrologTerm;
+import org.prolobjectlink.prolog.UnknownTermError;
 
 import jpl.Atom;
 import jpl.Query;

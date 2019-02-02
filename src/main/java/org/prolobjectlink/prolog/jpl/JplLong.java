@@ -17,12 +17,12 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.LONG_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.LONG_TYPE;
 
-import org.logicware.prolog.PrologLong;
-import org.logicware.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologLong;
+import org.prolobjectlink.prolog.PrologProvider;
 
 import jpl.Integer;
 

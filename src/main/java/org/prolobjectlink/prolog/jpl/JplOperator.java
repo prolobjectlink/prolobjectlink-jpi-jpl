@@ -17,23 +17,15 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.DOUBLE_TYPE;
+import org.prolobjectlink.prolog.AbstractOperator;
+import org.prolobjectlink.prolog.PrologOperator;
 
-import org.logicware.prolog.PrologDouble;
-import org.logicware.prolog.PrologProvider;
+public final class JplOperator extends AbstractOperator implements PrologOperator {
 
-import jpl.Float;
-
-public final class JplDouble extends JplFloat implements PrologDouble {
-
-	public JplDouble(PrologProvider provider) {
-		super(DOUBLE_TYPE, provider, new Float(0));
-	}
-
-	public JplDouble(PrologProvider provider, Number value) {
-		super(DOUBLE_TYPE, provider, new Float(value.doubleValue()));
+	public JplOperator(int priority, String specifier, String operator) {
+		super(priority, specifier, operator);
 	}
 
 }

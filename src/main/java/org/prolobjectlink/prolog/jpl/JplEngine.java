@@ -17,9 +17,9 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.worklogic.logging.LoggerConstants.IO;
+import static org.prolobjectlink.logging.LoggerConstants.IO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -33,18 +33,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.logicware.prolog.AbstractEngine;
-import org.logicware.prolog.PredicateIndicator;
-import org.logicware.prolog.PrologClause;
-import org.logicware.prolog.PrologEngine;
-import org.logicware.prolog.PrologIndicator;
-import org.logicware.prolog.PrologOperator;
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologQuery;
-import org.logicware.prolog.PrologTerm;
-import org.logicware.prolog.PrologTermType;
-import org.worklogic.ArrayIterator;
-import org.worklogic.logging.LoggerUtils;
+import org.prolobjectlink.ArrayIterator;
+import org.prolobjectlink.logging.LoggerUtils;
+import org.prolobjectlink.prolog.AbstractEngine;
+import org.prolobjectlink.prolog.PredicateIndicator;
+import org.prolobjectlink.prolog.PrologClause;
+import org.prolobjectlink.prolog.PrologEngine;
+import org.prolobjectlink.prolog.PrologIndicator;
+import org.prolobjectlink.prolog.PrologOperator;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologQuery;
+import org.prolobjectlink.prolog.PrologTerm;
+import org.prolobjectlink.prolog.PrologTermType;
 
 import jpl.Atom;
 import jpl.Query;

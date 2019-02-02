@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
 import java.util.AbstractSet;
 import java.util.Iterator;
@@ -27,9 +27,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.logicware.prolog.PrologClauses;
-import org.worklogic.ArrayIterator;
-import org.worklogic.RuntimeError;
+import org.prolobjectlink.ArrayIterator;
+import org.prolobjectlink.RuntimeError;
+import org.prolobjectlink.prolog.PrologClauses;
 
 import jpl.Term;
 

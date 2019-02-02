@@ -17,17 +17,17 @@
  * limitations under the License.
  * #L%
  */
-package org.logicware.prolog.jpl;
+package org.prolobjectlink.prolog.jpl;
 
-import static org.logicware.prolog.PrologTermType.LIST_TYPE;
+import static org.prolobjectlink.prolog.PrologTermType.LIST_TYPE;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import org.logicware.prolog.PrologList;
-import org.logicware.prolog.PrologProvider;
-import org.logicware.prolog.PrologTerm;
-import org.worklogic.AbstractIterator;
+import org.prolobjectlink.AbstractIterator;
+import org.prolobjectlink.prolog.PrologList;
+import org.prolobjectlink.prolog.PrologProvider;
+import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.Atom;
 import jpl.Compound;
