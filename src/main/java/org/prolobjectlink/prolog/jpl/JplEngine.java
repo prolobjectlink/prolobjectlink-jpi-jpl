@@ -321,6 +321,17 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 
 	public final void dispose() {
 		File c = new File(cache);
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter(new FileOutputStream(cache, false));
+			writer.print("");
+		} catch (FileNotFoundException e) {
+			LoggerUtils.error(getClass(), IO + cache, e);
+		} finally {
+			if (writer != null) {
+				writer.close();
+			}
+		}
 		c.deleteOnExit();
 		program.clear();
 	}
