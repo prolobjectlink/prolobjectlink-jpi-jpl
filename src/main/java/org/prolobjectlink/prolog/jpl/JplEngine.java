@@ -35,9 +35,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.prolobjectlink.ArrayIterator;
 import org.prolobjectlink.logging.LoggerUtils;
 import org.prolobjectlink.prolog.AbstractEngine;
+import org.prolobjectlink.prolog.ArrayIterator;
 import org.prolobjectlink.prolog.PredicateIndicator;
 import org.prolobjectlink.prolog.PrologClause;
 import org.prolobjectlink.prolog.PrologEngine;
