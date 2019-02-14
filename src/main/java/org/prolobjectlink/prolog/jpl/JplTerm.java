@@ -113,7 +113,7 @@ public abstract class JplTerm extends AbstractTerm implements PrologTerm {
 		if (!isVariable() && !isList() && !isNumber() && getArity() == 2) {
 			String key = "LIST";
 			String stringQuery = "findall(OP,current_op(_,_,OP)," + key + ")";
-			JplEngine engine = provider.newEngine().unwrap(JplEngine.class);
+			JplEngine engine = (JplEngine) provider.newEngine();
 			PrologQuery query = new JplQuery(engine, engine.getCache(), stringQuery);
 			Map<String, PrologTerm>[] solution = query.allVariablesSolutions();
 			for (Map<String, PrologTerm> map : solution) {
