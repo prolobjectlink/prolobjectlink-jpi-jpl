@@ -137,7 +137,7 @@ public abstract class JplTerm extends AbstractTerm implements PrologTerm {
 	}
 
 	public final boolean isCompound() {
-		return value.isCompound();
+		return value.isCompound() && !isAtom();
 	}
 
 	public final PrologTerm getTerm() {
