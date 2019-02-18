@@ -219,8 +219,6 @@ public abstract class JplTerm extends AbstractTerm implements PrologTerm {
 		if (getClass() != obj.getClass())
 			return false;
 		JplTerm other = (JplTerm) obj;
-		if (type != other.type)
-			return false;
 		if (value == null) {
 			if (other.value != null)
 				return false;

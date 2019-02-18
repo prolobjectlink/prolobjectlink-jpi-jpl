@@ -219,7 +219,11 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 	}
 
 	public final boolean currentPredicate(String functor, int arity) {
-		return new Query(consultCacheComma + "current_predicate(" + functor + "/" + arity + ")").hasSolution();
+		String x = functor;
+		if (x.startsWith("'") && x.endsWith("'")) {
+			x = x.substring(1, x.length() - 1);
+		}
+		return getPredicates().contains(new PredicateIndicator(x, arity));
 	}
 
 	public final boolean currentOperator(int priority, String specifier, String operator) {
@@ -256,14 +260,31 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 	}
 
 	public final Set<PrologIndicator> getPredicates() {
-		Set<PrologIndicator> pis = predicates();
-		Set<PrologIndicator> builtins = getBuiltIns();
-		for (PrologIndicator prologIndicator : pis) {
-			if (!builtins.contains(prologIndicator)) {
-				pis.remove(prologIndicator);
+		Set<PrologIndicator> indicators = new HashSet<PrologIndicator>();
+		String opQuery = consultCacheComma + "findall(X/Y,current_predicate(X/Y)," + KEY + ")";
+		Query query = new Query(opQuery);
+		if (query.hasSolution()) {
+			Term term = (Term) query.oneSolution().get(KEY);
+			Term[] termArray = term.toTermArray();
+			for (Term t : termArray) {
+				Term f = t.arg(1);
+				Term a = t.arg(2);
+
+				int arity = a.intValue();
+				String functor = f.name();
+
+				PredicateIndicator pi = new PredicateIndicator(functor, arity);
+				indicators.add(pi);
 			}
 		}
-		return pis;
+//		Set<PrologIndicator> pis = predicates();
+//		Set<PrologIndicator> builtins = getBuiltIns();
+//		for (PrologIndicator prologIndicator : pis) {
+//			if (!builtins.contains(prologIndicator)) {
+//				pis.remove(prologIndicator);
+//			}
+//		}
+		return indicators;
 	}
 
 	public final Set<PrologIndicator> getBuiltIns() {
