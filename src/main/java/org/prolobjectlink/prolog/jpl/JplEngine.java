@@ -277,13 +277,6 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 				indicators.add(pi);
 			}
 		}
-//		Set<PrologIndicator> pis = predicates();
-//		Set<PrologIndicator> builtins = getBuiltIns();
-//		for (PrologIndicator prologIndicator : pis) {
-//			if (!builtins.contains(prologIndicator)) {
-//				pis.remove(prologIndicator);
-//			}
-//		}
 		return indicators;
 	}
 
