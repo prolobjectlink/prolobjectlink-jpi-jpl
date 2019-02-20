@@ -78,7 +78,7 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 	private static String consultCacheComma;
 	static {
 		try {
-			File f = File.createTempFile("prolobjectlink-jpi-jpl7-cache-", ".pl");
+			File f = File.createTempFile("prolobjectlink-jpi-jpl-cache-", ".pl");
 			cache = f.getCanonicalPath().replace(File.separatorChar, '/');
 			consultCacheComma = "consult('" + cache + "'),";
 		} catch (IOException e) {
