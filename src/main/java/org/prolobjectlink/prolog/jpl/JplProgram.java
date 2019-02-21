@@ -31,7 +31,7 @@ import java.util.Set;
 
 import org.prolobjectlink.prolog.ArrayIterator;
 import org.prolobjectlink.prolog.PrologClauses;
-import org.prolobjectlink.prolog.RuntimeError;
+import org.prolobjectlink.prolog.PrologError;
 
 import jpl.Term;
 
@@ -68,7 +68,7 @@ public final class JplProgram extends AbstractSet<List<Term>> {
 			key += "/" + t.arity();
 			return key;
 		}
-		throw new RuntimeError(msg);
+		throw new PrologError(msg);
 	}
 
 	public List<Term> get(String key) {
