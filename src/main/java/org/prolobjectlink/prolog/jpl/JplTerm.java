@@ -42,7 +42,11 @@ import jpl.Atom;
 import jpl.Query;
 import jpl.Term;
 
-/** @author Jose Zalacain @since 1.0 */
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public abstract class JplTerm extends AbstractTerm implements PrologTerm {
 
 	protected Term value;

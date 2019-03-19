@@ -35,6 +35,11 @@ import org.prolobjectlink.prolog.PrologError;
 
 import jpl.Term;
 
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public final class JplProgram extends AbstractSet<List<Term>> {
 
 	//

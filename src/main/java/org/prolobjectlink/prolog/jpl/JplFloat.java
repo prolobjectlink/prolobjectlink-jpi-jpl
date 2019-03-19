@@ -30,6 +30,11 @@ import org.prolobjectlink.prolog.PrologTerm;
 import jpl.Float;
 import jpl.Term;
 
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public class JplFloat extends JplNumber implements PrologFloat {
 
 	public JplFloat(PrologProvider provider) {

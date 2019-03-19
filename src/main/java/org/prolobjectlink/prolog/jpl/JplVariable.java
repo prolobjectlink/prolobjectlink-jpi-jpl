@@ -32,6 +32,11 @@ import org.prolobjectlink.prolog.PrologVariable;
 
 import jpl.Variable;
 
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public class JplVariable extends JplTerm implements PrologVariable {
 
 	JplVariable(PrologProvider provider) {

@@ -35,6 +35,11 @@ import java.util.List;
 import jpl.Term;
 import jpl.Util;
 
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public final class JplParser {
 
 	public Term parseTerm(String term) {

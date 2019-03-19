@@ -28,6 +28,11 @@ import org.prolobjectlink.prolog.PrologTerm;
 
 import jpl.Atom;
 
+/**
+ * 
+ * @author Jose Zalacain
+ * @since 1.0
+ */
 public final class JplNil extends JplTerm implements PrologTerm {
 
 	JplNil(PrologProvider provider) {
