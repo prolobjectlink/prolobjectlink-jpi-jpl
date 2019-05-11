@@ -33,7 +33,7 @@ import jpl.Atom;
  * @author Jose Zalacain
  * @since 1.0
  */
-public final class JplFail extends JplTerm implements PrologTerm {
+final class JplFail extends JplTerm implements PrologTerm {
 
 	protected JplFail(PrologProvider provider) {
 		super(FAIL_TYPE, provider, new Atom("fail"));

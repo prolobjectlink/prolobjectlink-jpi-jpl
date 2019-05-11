@@ -35,7 +35,7 @@ import jpl.Term;
  * @author Jose Zalacain
  * @since 1.0
  */
-public class JplStructure extends JplTerm implements PrologStructure {
+class JplStructure extends JplTerm implements PrologStructure {
 
 	JplStructure(PrologProvider provider, String functor, PrologTerm... arguments) {
 		super(STRUCTURE_TYPE, provider);

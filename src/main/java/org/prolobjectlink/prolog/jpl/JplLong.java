@@ -33,13 +33,9 @@ import jpl.Integer;
  * @author Jose Zalacain
  * @since 1.0
  */
-public final class JplLong extends JplInteger implements PrologLong {
+final class JplLong extends JplInteger implements PrologLong {
 
-	public JplLong(PrologProvider provider) {
-		super(LONG_TYPE, provider, new Integer(0));
-	}
-
-	public JplLong(PrologProvider provider, Number value) {
+	JplLong(PrologProvider provider, Number value) {
 		super(LONG_TYPE, provider, new Integer(value.longValue()));
 	}
 

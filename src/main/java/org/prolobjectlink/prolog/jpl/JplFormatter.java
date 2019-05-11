@@ -34,7 +34,7 @@ import org.prolobjectlink.prolog.PrologFormatter;
  * @author Jose Zalacain
  * @since 1.0
  */
-public class JplFormatter extends Formatter implements PrologFormatter {
+class JplFormatter extends Formatter implements PrologFormatter {
 
 	private static final String ERROR = "ERROR";
 	private static final String WARN = "WARN";

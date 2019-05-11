@@ -35,17 +35,13 @@ import jpl.Term;
  * @author Jose Zalacain
  * @since 1.0
  */
-public class JplFloat extends JplNumber implements PrologFloat {
+class JplFloat extends JplNumber implements PrologFloat {
 
-	public JplFloat(PrologProvider provider) {
-		super(FLOAT_TYPE, provider, new Float(0));
-	}
-
-	public JplFloat(PrologProvider provider, Number value) {
+	JplFloat(PrologProvider provider, Number value) {
 		super(FLOAT_TYPE, provider, new Float(value.floatValue()));
 	}
 
-	public JplFloat(int type, PrologProvider provider, Term value) {
+	JplFloat(int type, PrologProvider provider, Term value) {
 		super(type, provider, value);
 	}
 

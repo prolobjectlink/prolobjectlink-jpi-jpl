@@ -33,7 +33,7 @@ import jpl.Atom;
  * @author Jose Zalacain
  * @since 1.0
  */
-public final class JplFalse extends JplTerm implements PrologTerm {
+final class JplFalse extends JplTerm implements PrologTerm {
 
 	protected JplFalse(PrologProvider provider) {
 		super(FALSE_TYPE, provider, new Atom("false"));
