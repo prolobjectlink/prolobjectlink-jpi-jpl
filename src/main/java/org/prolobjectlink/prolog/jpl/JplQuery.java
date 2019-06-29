@@ -191,7 +191,7 @@ final class JplQuery extends AbstractQuery implements PrologQuery {
 		solutions = null;
 	}
 
-	public synchronized List<Map<String, PrologTerm>> all() {
+	public List<Map<String, PrologTerm>> all() {
 		List<Map<String, PrologTerm>> l = new ArrayList<Map<String, PrologTerm>>();
 		for (Map<String, PrologTerm> map : solutions) {
 			l.add(map);
@@ -200,7 +200,7 @@ final class JplQuery extends AbstractQuery implements PrologQuery {
 	}
 
 	@Override
-	public synchronized int hashCode() {
+	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
 		result = prime * result + stringQuery.hashCode();
@@ -209,7 +209,7 @@ final class JplQuery extends AbstractQuery implements PrologQuery {
 	}
 
 	@Override
-	public synchronized boolean equals(Object obj) {
+	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;
 		}
@@ -224,7 +224,7 @@ final class JplQuery extends AbstractQuery implements PrologQuery {
 	}
 
 	@Override
-	public synchronized String toString() {
+	public String toString() {
 		return stringQuery;
 	}
 

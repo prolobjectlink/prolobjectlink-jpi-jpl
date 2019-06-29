@@ -24,7 +24,6 @@ package org.prolobjectlink.prolog.jpl;
 import static org.prolobjectlink.prolog.PrologTermType.ATOM_TYPE;
 import static org.prolobjectlink.prolog.PrologTermType.CUT_TYPE;
 import static org.prolobjectlink.prolog.PrologTermType.DOUBLE_TYPE;
-import static org.prolobjectlink.prolog.PrologTermType.EMPTY_TYPE;
 import static org.prolobjectlink.prolog.PrologTermType.FAIL_TYPE;
 import static org.prolobjectlink.prolog.PrologTermType.FALSE_TYPE;
 import static org.prolobjectlink.prolog.PrologTermType.FLOAT_TYPE;
@@ -149,8 +148,6 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 			return new Atom("true");
 		case FALSE_TYPE:
 			return new Atom("false");
-		case EMPTY_TYPE:
-			return JplEmpty.EMPTY;
 		case ATOM_TYPE:
 			return new Atom(removeQuoted(((PrologAtom) term).getStringValue()));
 		case FLOAT_TYPE:
