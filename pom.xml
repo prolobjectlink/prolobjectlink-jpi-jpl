@@ -57,6 +57,19 @@
 		<url>https://github.com/prolobjectlink/${project.name}/issues</url>
 	</issueManagement>
 
+	<repositories>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+	
 	<distributionManagement>
 		<snapshotRepository>
       <id>ossrh</id>
