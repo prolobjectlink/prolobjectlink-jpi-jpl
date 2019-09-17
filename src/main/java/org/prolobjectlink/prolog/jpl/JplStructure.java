@@ -62,6 +62,10 @@ class JplStructure extends JplTerm implements PrologStructure {
 		super(STRUCTURE_TYPE, provider, new Compound(functor, new Term[] { left, right }));
 	}
 
+	JplStructure(int objectType, PrologProvider provider, Term newJRef) {
+		super(objectType, provider, newJRef);
+	}
+
 	public PrologTerm getArgument(int index) {
 		checkIndex(index, getArity());
 		return getArguments()[index];

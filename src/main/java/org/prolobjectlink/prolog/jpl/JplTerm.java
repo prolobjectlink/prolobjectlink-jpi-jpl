@@ -141,6 +141,34 @@ abstract class JplTerm extends AbstractTerm implements PrologTerm {
 		return value.isCompound() && !isAtom();
 	}
 
+	public final boolean isTrueType() {
+		return value.isJTrue();
+	}
+
+	public final boolean isFalseType() {
+		return value.isJFalse();
+	}
+
+	public final boolean isNullType() {
+		return value.isJNull();
+	}
+
+	public final boolean isVoidType() {
+		return value.isJVoid();
+	}
+
+	public final boolean isObjectType() {
+		return value.isJObject();
+	}
+
+	public final boolean isReference() {
+		return value.isJRef();
+	}
+
+	public final Object getReference() {
+		return value.jrefToObject();
+	}
+
 	public final PrologTerm getTerm() {
 		return this;
 	}
@@ -185,7 +213,6 @@ abstract class JplTerm extends AbstractTerm implements PrologTerm {
 
 	}
 
-	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -195,7 +222,6 @@ abstract class JplTerm extends AbstractTerm implements PrologTerm {
 		return result;
 	}
 
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -211,7 +237,6 @@ abstract class JplTerm extends AbstractTerm implements PrologTerm {
 		return true;
 	}
 
-	@Override
 	public String toString() {
 		if (type == CUT_TYPE) {
 			return getFunctor();
