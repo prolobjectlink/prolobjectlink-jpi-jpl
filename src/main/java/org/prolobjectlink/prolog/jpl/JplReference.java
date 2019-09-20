@@ -26,9 +26,14 @@ import static org.prolobjectlink.prolog.PrologTermType.OBJECT_TYPE;
 import org.prolobjectlink.prolog.PrologProvider;
 import org.prolobjectlink.prolog.PrologReference;
 
+import jpl.Compound;
 import jpl.JPL;
 
 public final class JplReference extends JplStructure implements PrologReference {
+
+	JplReference(PrologProvider provider, Compound reference) {
+		super(OBJECT_TYPE, provider, reference);
+	}
 
 	JplReference(PrologProvider provider, Object reference) {
 		super(OBJECT_TYPE, provider, JPL.newJRef(reference));

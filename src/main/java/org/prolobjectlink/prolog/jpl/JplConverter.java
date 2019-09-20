@@ -108,7 +108,7 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 
 			// object reference
 			if (functor.equals("@") && arity == 1) {
-				return new JplReference(provider, compound.jrefToObject());
+				return new JplReference(provider, compound);
 			}
 
 			// expressions
