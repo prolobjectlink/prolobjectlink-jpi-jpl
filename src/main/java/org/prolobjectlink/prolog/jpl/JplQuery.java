@@ -89,8 +89,11 @@ final class JplQuery extends AbstractQuery implements PrologQuery {
 				Term exception = error.arg(1);
 				Term ref = exception.arg(1);
 				if (ref.isJRef()) {
-					Exception k = (Exception) ref.jrefToObject();
-					getLogger().error(getClass(), PrologLogger.RUNTIME_ERROR, k);
+					Object object = ref.jrefToObject();
+					if (object instanceof Throwable) {
+						Throwable k = (Throwable) object;
+						getLogger().error(getClass(), PrologLogger.RUNTIME_ERROR, k);
+					}
 				}
 			}
 		}
