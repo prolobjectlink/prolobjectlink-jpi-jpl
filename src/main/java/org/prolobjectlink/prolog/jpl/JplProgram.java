@@ -210,6 +210,7 @@ final class JplProgram extends AbstractSet<List<Term>> {
 			while (i.hasNext()) {
 				families.append(":-");
 				families.append(i.next());
+				families.append('.');
 				families.append(i.hasNext() ? "\n" : "\n\n");
 			}
 		}
