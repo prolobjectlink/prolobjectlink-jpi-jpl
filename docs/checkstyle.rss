@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>prolobjectlink-jpi-jpl - Checkstyle report</title>
-    <link>https://github.com/prolobjectlink/prolobjectlink-jpi-jpl</link>
+    <link>https://prolobjectlink.github.io/prolobjectlink-jpi-jpl</link>
     <description>prolobjectlink-jpi-jpl - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2012 - 2020 Prolobjectlink Project</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html</link>
+            <link>https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html</link>
       <description>
-        <p>Click <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplStructure.java">io/github/prolobjectlink/prolog/jpl/JplStructure.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplStructure.java">io/github/prolobjectlink/prolog/jpl/JplStructure.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplClause.java">io/github/prolobjectlink/prolog/jpl/JplClause.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplClause.java">io/github/prolobjectlink/prolog/jpl/JplClause.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplList.java">io/github/prolobjectlink/prolog/jpl/JplList.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplList.java">io/github/prolobjectlink/prolog/jpl/JplList.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplScriptFactory.java">io/github/prolobjectlink/prolog/jpl/JplScriptFactory.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplScriptFactory.java">io/github/prolobjectlink/prolog/jpl/JplScriptFactory.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplDouble.java">io/github/prolobjectlink/prolog/jpl/JplDouble.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplDouble.java">io/github/prolobjectlink/prolog/jpl/JplDouble.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplNil.java">io/github/prolobjectlink/prolog/jpl/JplNil.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplNil.java">io/github/prolobjectlink/prolog/jpl/JplNil.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplEmpty.java">io/github/prolobjectlink/prolog/jpl/JplEmpty.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplEmpty.java">io/github/prolobjectlink/prolog/jpl/JplEmpty.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFail.java">io/github/prolobjectlink/prolog/jpl/JplFail.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFail.java">io/github/prolobjectlink/prolog/jpl/JplFail.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplIndicator.java">io/github/prolobjectlink/prolog/jpl/JplIndicator.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplIndicator.java">io/github/prolobjectlink/prolog/jpl/JplIndicator.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplLong.java">io/github/prolobjectlink/prolog/jpl/JplLong.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplLong.java">io/github/prolobjectlink/prolog/jpl/JplLong.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplAtom.java">io/github/prolobjectlink/prolog/jpl/JplAtom.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplAtom.java">io/github/prolobjectlink/prolog/jpl/JplAtom.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplLogger.java">io/github/prolobjectlink/prolog/jpl/JplLogger.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplLogger.java">io/github/prolobjectlink/prolog/jpl/JplLogger.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplOperator.java">io/github/prolobjectlink/prolog/jpl/JplOperator.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplOperator.java">io/github/prolobjectlink/prolog/jpl/JplOperator.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplProgram.java">io/github/prolobjectlink/prolog/jpl/JplProgram.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplProgram.java">io/github/prolobjectlink/prolog/jpl/JplProgram.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +225,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFalse.java">io/github/prolobjectlink/prolog/jpl/JplFalse.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFalse.java">io/github/prolobjectlink/prolog/jpl/JplFalse.java</a>
                 </td>
                 <td>
                   0
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplEngine.java">io/github/prolobjectlink/prolog/jpl/JplEngine.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplEngine.java">io/github/prolobjectlink/prolog/jpl/JplEngine.java</a>
                 </td>
                 <td>
                   0
@@ -253,7 +253,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplCut.java">io/github/prolobjectlink/prolog/jpl/JplCut.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplCut.java">io/github/prolobjectlink/prolog/jpl/JplCut.java</a>
                 </td>
                 <td>
                   0
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplNumber.java">io/github/prolobjectlink/prolog/jpl/JplNumber.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplNumber.java">io/github/prolobjectlink/prolog/jpl/JplNumber.java</a>
                 </td>
                 <td>
                   0
@@ -281,7 +281,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplTerm.java">io/github/prolobjectlink/prolog/jpl/JplTerm.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplTerm.java">io/github/prolobjectlink/prolog/jpl/JplTerm.java</a>
                 </td>
                 <td>
                   0
@@ -295,7 +295,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplReference.java">io/github/prolobjectlink/prolog/jpl/JplReference.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplReference.java">io/github/prolobjectlink/prolog/jpl/JplReference.java</a>
                 </td>
                 <td>
                   0
@@ -309,7 +309,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplQuery.java">io/github/prolobjectlink/prolog/jpl/JplQuery.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplQuery.java">io/github/prolobjectlink/prolog/jpl/JplQuery.java</a>
                 </td>
                 <td>
                   0
@@ -323,7 +323,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplProvider.java">io/github/prolobjectlink/prolog/jpl/JplProvider.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplProvider.java">io/github/prolobjectlink/prolog/jpl/JplProvider.java</a>
                 </td>
                 <td>
                   0
@@ -337,7 +337,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFloat.java">io/github/prolobjectlink/prolog/jpl/JplFloat.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFloat.java">io/github/prolobjectlink/prolog/jpl/JplFloat.java</a>
                 </td>
                 <td>
                   0
@@ -351,7 +351,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplTrue.java">io/github/prolobjectlink/prolog/jpl/JplTrue.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplTrue.java">io/github/prolobjectlink/prolog/jpl/JplTrue.java</a>
                 </td>
                 <td>
                   0
@@ -365,7 +365,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFormatter.java">io/github/prolobjectlink/prolog/jpl/JplFormatter.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplFormatter.java">io/github/prolobjectlink/prolog/jpl/JplFormatter.java</a>
                 </td>
                 <td>
                   0
@@ -379,7 +379,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplInteger.java">io/github/prolobjectlink/prolog/jpl/JplInteger.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplInteger.java">io/github/prolobjectlink/prolog/jpl/JplInteger.java</a>
                 </td>
                 <td>
                   0
@@ -393,7 +393,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplParser.java">io/github/prolobjectlink/prolog/jpl/JplParser.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplParser.java">io/github/prolobjectlink/prolog/jpl/JplParser.java</a>
                 </td>
                 <td>
                   0
@@ -407,7 +407,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplConverter.java">io/github/prolobjectlink/prolog/jpl/JplConverter.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplConverter.java">io/github/prolobjectlink/prolog/jpl/JplConverter.java</a>
                 </td>
                 <td>
                   0
@@ -421,7 +421,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/prolobjectlink/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplVariable.java">io/github/prolobjectlink/prolog/jpl/JplVariable.java</a>
+                  <a href="https://prolobjectlink.github.io/prolobjectlink-jpi-jpl/checkstyle.html#io.github.prolobjectlink.prolog.jpl.JplVariable.java">io/github/prolobjectlink/prolog/jpl/JplVariable.java</a>
                 </td>
                 <td>
                   0
