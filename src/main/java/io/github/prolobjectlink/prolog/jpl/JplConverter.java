@@ -35,6 +35,9 @@ import static io.github.prolobjectlink.prolog.PrologTermType.STRUCTURE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.TRUE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.VARIABLE_TYPE;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import io.github.prolobjectlink.prolog.AbstractConverter;
 import io.github.prolobjectlink.prolog.PrologAtom;
 import io.github.prolobjectlink.prolog.PrologConverter;
@@ -97,7 +100,14 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 			}
 			return variable;
 		} else if (prologTerm.hasFunctor(".", 2)) {
-			return new JplList(provider, prologTerm.toTermArray());
+			Term[] a = new Term[0];
+			List<Term> l = new ArrayList<Term>();
+			Term ptr = prologTerm;
+			while (!ptr.isVariable() && ptr.hasFunctor(".", 2)) {
+				l.add(ptr.arg(1));
+				ptr = ptr.arg(2);
+			}
+			return new JplList(provider, l.toArray(a));
 		} else if (prologTerm.isCompound()) {
 
 			Compound compound = (Compound) prologTerm;
