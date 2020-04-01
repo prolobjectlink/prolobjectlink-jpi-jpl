@@ -7,11 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Jose Zalacain" />
-    <meta name="Date-Creation-yyyymmdd" content="20190331" />
     <meta name="Date-Revision-yyyymmdd" content="20200401" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>prolobjectlink-jpi-jpl &#x2013; Title</title>
+    <title>prolobjectlink-jpi-jpl &#x2013; Surefire Report</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.5.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -266,13 +264,90 @@
           <span class="icon-chevron-right"></span>
         Project Information</a>
                   </li>
-                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                
       <li>
   
                           <a href="project-reports.html" title="Project Reports">
-          <span class="icon-chevron-right"></span>
+          <span class="icon-chevron-down"></span>
         Project Reports</a>
-                  </li>
+                    <ul class="nav nav-list">
+                    
+      <li>
+  
+                          <a href="apidocs/index.html" title="Javadoc">
+          <span class="none"></span>
+        Javadoc</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="checkstyle.html" title="Checkstyle">
+          <span class="none"></span>
+        Checkstyle</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="xref/index.html" title="Source Xref">
+          <span class="none"></span>
+        Source Xref</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="jdepend-report.html" title="JDepend">
+          <span class="none"></span>
+        JDepend</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="pmd.html" title="PMD Report">
+          <span class="none"></span>
+        PMD Report</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="cpd.html" title="CPD Report">
+          <span class="none"></span>
+        CPD Report</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="changes-report.html" title="Changes">
+          <span class="none"></span>
+        Changes</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="taglist.html" title="Tag List">
+          <span class="none"></span>
+        Tag List</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="javancss.html" title="JavaNCSS Report">
+          <span class="none"></span>
+        JavaNCSS Report</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="clirr-report.html" title="Clirr">
+          <span class="none"></span>
+        Clirr</a>
+            </li>
+                    
+      <li class="active">
+  
+            <a href="#"><span class="none"></span>Surefire Report</a>
+          </li>
+              </ul>
+        </li>
             </ul>
               
                             <form id="search-form" action="https://www.google.com/search" method="get" >
@@ -299,93 +374,43 @@
                 
         <div id="bodyColumn"  class="span10" >
                                   
-            <div class="section">
-<h2><a name="Getting_Started"></a>Getting Started</h2>
+            <script type="text/javascript">
+//<![CDATA[
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+//]]>
+</script>
 <div class="section">
-<h3><a name="Install"></a>Install</h3>
-<p>Java Prolog Interface API is distributed with implementation adapter and concrete prolog driver library until it is possible according to related libraries licenses. The distributions are named normally such that <b>prolobjectlink-jpi-jpl7-swi7-x.y.z-dist.zip</b> meaning that this distribution is a JPI implementation over JPL version 7 or above and SWI-Prolog version 7 or above. The x.y.z is the distribution version. The distribution can be downloaded in zip or tar.gz compresses format. To install you need perform the following steps:</p>
-<ul>
-<li>Install Java Runtime Environment (JRE) 1.8 or above.</li>
-<li>Install Native Prolog Engine compatible to Operating System and your architecture. If the Prolog Engine to use is Java-based this step is omitted.</li></ul>
-<ul>
-<li>Configure System Path with Prolog Engine routes. If the Prolog Engine to use is Java-based this step is omitted.</li>
-<li>Download Java Prolog Interface compatible to related prolog engine and unzip the distribution over Operating File System.</li>
-<li>Configure System Path with JPI unzip folder route.</li>
-<li>Open a new System console and type pllink &#x2013;i to see the product information.
-<p>For the JPI beginners we recommended start with a Pure Java-Prolog Engine because have less configuration aspects and native engine are more difficult to link.</p></li></ul></div>
+<h2><a name="Surefire_Report"></a>Surefire Report</h2></div>
 <div class="section">
-<h3><a name="Directories"></a>Directories</h3>
-<p>After download and unzip JPI distribution in the final JPI folder you will see the following structure:</p>
-<table border="0" class="table table-striped">
+<h2><a name="Summary"></a>Summary</h2><a name="Summary"></a><br />
+<table border="1" class="table table-striped">
 <tr class="a">
-<td align="center">Folder/File</td>
-<td align="center">Description</td></tr>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th></tr>
 <tr class="b">
-<td align="center">bin</td>
-<td align="center">Binaries scripts</td></tr>
-<tr class="a">
-<td align="center">docs</td>
-<td align="center">Documentation</td></tr>
-<tr class="b">
-<td align="center">prt</td>
-<td align="center">Prolog programs files</td></tr>
-<tr class="a">
-<td align="center">lib</td>
-<td align="center">Library jars files</td></tr>
-<tr class="b">
-<td align="center">obj</td>
-<td align="center">Programs to link native engine procedures</td></tr>
-<tr class="a">
-<td align="center">src</td>
-<td align="center">Adapter source folder</td></tr>
-<tr class="b">
-<td align="center">CONTRIBUTING</td>
-<td align="center">Binaries scripts</td></tr>
-<tr class="a">
-<td align="center">LICENSE</td>
-<td align="center">Binaries scripts</td></tr>
-<tr class="b">
-<td align="center">NOTICE</td>
-<td align="center">Binaries scripts</td></tr>
-<tr class="a">
-<td align="center">README</td>
-<td align="center">Binaries scripts</td></tr></table></div>
-<div class="section">
-<h3><a name="Architecture"></a>Architecture</h3>
-<p>In general way and in bottom-up order the JPI architecture is composed by the guest Operating System at low level. Over this level we find compatible with guest Operating System and Native Prolog Engines implementations. Over this level we find Pure Java Prolog Engine implementations and Java Driver libraries to Native Prolog Engine. Over this layer is the JPI interface adapter implementation for your correspondent Java Prolog Driver. In the top level we find a User Application that use the JPI interface.</p>
-<table border="0" class="table table-striped">
-<tr class="a">
-<td align="center">User Application</td></tr>
-<tr class="b">
-<td align="center">JPI</td></tr>
-<tr class="a">
-<td align="center">JPI-JPL</td></tr>
-<tr class="b">
-<td align="center">JPL</td></tr>
-<tr class="a">
-<td align="center">SWI</td></tr>
-<tr class="b">
-<td align="center">OS</td></tr></table></div>
-<div class="section">
-<h3><a name="Getting_started_Java_to_Prolog"></a>Getting started Java to Prolog</h3>
-<p>After installation and architecture compression you can use the hello world sample for test the system integration. This hello world sample show how interacts with JPI from Java programming language with Abstracted Prolog Engine. For the first experience we suggesting use a Java-based Prolog engine like tuProlog because have less configuration aspects.</p>
-<p>Create in your preferred development environment an empty project. Set in the project build path the JPI downloaded libraries located at lib folder. Create a Main Java class that look like below code:</p>
-<div class="source"><pre class="prettyprint">public class Main {
-
-        public static void main(String[] args) {
-                PrologProvider provider = Prolog.
-                        getProvider(XsbProlog.class);
-                PrologEngine engine = provider.newEngine();
-                engine.asserta(&quot;sample('hello wolrd')&quot;);
-                PrologQuery query=engine.query(&quot;sample(X)&quot;);
-                System.out.println(query.one());
-        }
-
-}
-</pre></div></div>
-<div class="section">
-<h3><a name="Getting_started_Prolog_to_Java"></a>Getting started Prolog to Java</h3>
-<p>Blah, Blah, &#x2026;</p></div></div>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+<td>0</td></tr></table><br />
+<p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div>
                   </div>
             </div>
           </div>
