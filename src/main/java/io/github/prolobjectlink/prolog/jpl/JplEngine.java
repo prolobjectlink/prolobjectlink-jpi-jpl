@@ -137,6 +137,10 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 		asserta(Util.textToTerm(stringClause));
 	}
 
+	public final void asserta(PrologTerm term) {
+		asserta(fromTerm(term, Term.class));
+	}
+
 	public final void asserta(PrologTerm head, PrologTerm... body) {
 		asserta(fromTerm(head, body, Term.class));
 	}
@@ -150,6 +154,10 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 		assertz(Util.textToTerm(stringClause));
 	}
 
+	public final void assertz(PrologTerm term) {
+		assertz(fromTerm(term, Term.class));
+	}
+
 	public final void assertz(PrologTerm head, PrologTerm... body) {
 		assertz(fromTerm(head, body, Term.class));
 	}
@@ -161,6 +169,10 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 
 	public final boolean clause(String stringClause) {
 		return clause(Util.textToTerm(stringClause));
+	}
+
+	public final boolean clause(PrologTerm term) {
+		return clause(fromTerm(term, Term.class));
 	}
 
 	public final boolean clause(PrologTerm head, PrologTerm... body) {
@@ -185,6 +197,10 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 		retract(Util.textToTerm(stringClause));
 	}
 
+	public final void retract(PrologTerm term) {
+		retract(fromTerm(term, Term.class));
+	}
+
 	public final void retract(PrologTerm head, PrologTerm... body) {
 		retract(provider.fromTerm(head, body, Term.class));
 	}
@@ -196,6 +212,12 @@ public abstract class JplEngine extends AbstractEngine implements PrologEngine {
 
 	public final PrologQuery query(String stringQuery) {
 		return new JplQuery(this, cache, stringQuery);
+	}
+
+	public final PrologQuery query(PrologTerm term) {
+		StringBuilder buffer = new StringBuilder();
+		buffer.append("" + term + ".");
+		return query("" + buffer + "");
 	}
 
 	public final PrologQuery query(PrologTerm[] terms) {
