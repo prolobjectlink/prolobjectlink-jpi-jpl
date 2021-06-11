@@ -31,6 +31,7 @@ import static io.github.prolobjectlink.prolog.PrologTermType.INTEGER_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.LIST_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.LONG_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.NIL_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.OBJECT_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.STRUCTURE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.TRUE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.VARIABLE_TYPE;
@@ -53,6 +54,7 @@ import jpl.Atom;
 import jpl.Compound;
 import jpl.Float;
 import jpl.Integer;
+import jpl.JPL;
 import jpl.JPLException;
 import jpl.Query;
 import jpl.Term;
@@ -192,6 +194,8 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 			String functor = term.getFunctor();
 			Term[] arguments = fromTermArray(((PrologStructure) term).getArguments());
 			return new Compound(functor, arguments);
+		case OBJECT_TYPE:
+			return JPL.newJRef(term.getObject());
 		default:
 			throw new UnknownTermError(term);
 		}

@@ -25,17 +25,33 @@ import static io.github.prolobjectlink.prolog.PrologTermType.OBJECT_TYPE;
 
 import io.github.prolobjectlink.prolog.PrologProvider;
 import io.github.prolobjectlink.prolog.PrologReference;
-import jpl.Compound;
+import io.github.prolobjectlink.prolog.PrologTerm;
 import jpl.JPL;
+import jpl.Term;
 
-public final class JplReference extends JplStructure implements PrologReference {
+public final class JplReference extends JplTerm implements PrologReference {
 
-	JplReference(PrologProvider provider, Compound reference) {
+	JplReference(PrologProvider provider, Term reference) {
 		super(OBJECT_TYPE, provider, reference);
 	}
 
 	JplReference(PrologProvider provider, Object reference) {
 		super(OBJECT_TYPE, provider, JPL.newJRef(reference));
+	}
+
+	@Override
+	public int getArity() {
+		return value.arity();
+	}
+
+	@Override
+	public String getFunctor() {
+		return value.name();
+	}
+
+	@Override
+	public PrologTerm[] getArguments() {
+		return toTermArray(value.args(), PrologTerm[].class);
 	}
 
 }

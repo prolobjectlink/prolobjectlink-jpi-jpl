@@ -21,6 +21,10 @@
  */
 package io.github.prolobjectlink.prolog.jpl;
 
+import static jpl.JPL.JFALSE;
+import static jpl.JPL.JTRUE;
+import static jpl.JPL.JNULL;
+import static jpl.JPL.JVOID;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -152,8 +156,24 @@ public abstract class JplProvider extends AbstractProvider implements PrologProv
 		return new JplStructure(this, left, operator, right);
 	}
 
-	public PrologTerm newReference(Object reference) {
+	public final PrologTerm newReference(Object reference) {
 		return new JplReference(this, reference);
+	}
+
+	public final PrologTerm falseReference() {
+		return new JplReference(this, JFALSE);
+	}
+
+	public final PrologTerm trueReference() {
+		return new JplReference(this, JTRUE);
+	}
+
+	public final PrologTerm nullReference() {
+		return new JplReference(this, JNULL);
+	}
+
+	public final PrologTerm voidReference() {
+		return new JplReference(this, JVOID);
 	}
 
 	public final PrologLogger getLogger() {
