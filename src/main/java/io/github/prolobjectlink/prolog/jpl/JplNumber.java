@@ -23,7 +23,6 @@ package io.github.prolobjectlink.prolog.jpl;
 
 import io.github.prolobjectlink.prolog.ArityError;
 import io.github.prolobjectlink.prolog.FunctorError;
-import io.github.prolobjectlink.prolog.IndicatorError;
 import io.github.prolobjectlink.prolog.PrologDouble;
 import io.github.prolobjectlink.prolog.PrologFloat;
 import io.github.prolobjectlink.prolog.PrologInteger;
@@ -65,14 +64,6 @@ abstract class JplNumber extends JplTerm implements PrologNumber {
 
 	public final String getFunctor() {
 		throw new FunctorError(this);
-	}
-
-	public final String getIndicator() {
-		throw new IndicatorError(this);
-	}
-
-	public final boolean hasIndicator(String functor, int arity) {
-		return false;
 	}
 
 }
