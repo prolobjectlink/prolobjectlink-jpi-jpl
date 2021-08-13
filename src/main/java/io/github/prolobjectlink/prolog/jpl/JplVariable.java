@@ -28,6 +28,7 @@ import io.github.prolobjectlink.prolog.FunctorError;
 import io.github.prolobjectlink.prolog.PrologProvider;
 import io.github.prolobjectlink.prolog.PrologTerm;
 import io.github.prolobjectlink.prolog.PrologVariable;
+import jpl.Term;
 import jpl.Variable;
 
 /**
@@ -43,6 +44,18 @@ class JplVariable extends JplTerm implements PrologVariable {
 
 	JplVariable(PrologProvider provider, String name) {
 		super(VARIABLE_TYPE, provider, new Variable(name));
+	}
+
+	JplVariable(int type, PrologProvider provider) {
+		super(type, provider);
+	}
+
+	JplVariable(int type, PrologProvider provider, String name) {
+		super(type, provider, new Variable(name));
+	}
+
+	JplVariable(int type, PrologProvider provider, Term var) {
+		super(type, provider, var);
 	}
 
 	public boolean isAnonymous() {
