@@ -41,7 +41,11 @@ public final class JplReference extends JplTerm implements PrologReference {
 
 	@Override
 	public Class<?> getReferenceType() {
-		return getObject().getClass();
+		Object object = getObject();
+		if (object != null) {
+			object.getClass();
+		}
+		return null;
 	}
 
 	@Override
@@ -57,6 +61,19 @@ public final class JplReference extends JplTerm implements PrologReference {
 	@Override
 	public PrologTerm[] getArguments() {
 		return toTermArray(value.args(), PrologTerm[].class);
+	}
+
+	public Object getObject() {
+		if (value.isJFalse()) {
+			return Boolean.FALSE;
+		} else if (value.isJTrue()) {
+			return Boolean.TRUE;
+		} else if (value.isJVoid()) {
+			return void.class;
+		} else if (value.isJRef()) {
+			return value.jrefToObject();
+		}
+		return null;
 	}
 
 }
