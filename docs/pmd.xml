@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2021-06-12T15:06:45.789">
+<pmd version="4.2.5" timestamp="2021-08-14T06:51:55.880">
 <file name="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpi-jpl\src\main\java\io\github\prolobjectlink\prolog\jpl\JplConverter.java">
 <violation beginline="22" endline="224" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="io.github.prolobjectlink.prolog.jpl" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
 Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpi-jpl\src\main\java\io\github\prolobjectlink\prolog\jpl\JplField.java">
+<violation beginline="42" endline="44" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplField" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
+</violation>
+<violation beginline="46" endline="48" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplField" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
+</violation>
+</file>
+<file name="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpi-jpl\src\main\java\io\github\prolobjectlink\prolog\jpl\JplParameter.java">
+<violation beginline="42" endline="44" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplParameter" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
+</violation>
+<violation beginline="46" endline="48" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplParameter" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
+</violation>
+</file>
+<file name="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpi-jpl\src\main\java\io\github\prolobjectlink\prolog\jpl\JplResult.java">
+<violation beginline="42" endline="44" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplResult" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
+</violation>
+<violation beginline="46" endline="48" begincolumn="9" endcolumn="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="io.github.prolobjectlink.prolog.jpl" class="JplResult" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'position'.
 </violation>
 </file>
 <file name="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpi-jpl\src\main\java\io\github\prolobjectlink\prolog\jpl\JplTerm.java">
