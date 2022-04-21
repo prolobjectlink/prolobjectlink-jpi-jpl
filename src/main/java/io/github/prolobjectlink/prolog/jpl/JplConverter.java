@@ -22,16 +22,23 @@
 package io.github.prolobjectlink.prolog.jpl;
 
 import static io.github.prolobjectlink.prolog.PrologTermType.ATOM_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.CLASS_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.CUT_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.DOUBLE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.FAIL_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.FALSE_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.FIELD_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.FLOAT_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.INTEGER_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.LIST_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.LONG_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.MAP_ENTRY_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.MAP_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.MIXIN_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.NIL_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.OBJECT_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.PARAMETER_TYPE;
+import static io.github.prolobjectlink.prolog.PrologTermType.RESULT_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.STRUCTURE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.TRUE_TYPE;
 import static io.github.prolobjectlink.prolog.PrologTermType.VARIABLE_TYPE;
@@ -184,6 +191,7 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 			}
 			return variable;
 		case LIST_TYPE:
+		case MAP_TYPE:
 			PrologTerm[] array = term.getArguments();
 			Term list = JplEmpty.EMPTY;
 			for (int i = array.length - 1; i >= 0; --i) {
@@ -191,11 +199,27 @@ public abstract class JplConverter extends AbstractConverter<Term> implements Pr
 			}
 			return list;
 		case STRUCTURE_TYPE:
+		case MAP_ENTRY_TYPE:
 			String functor = term.getFunctor();
 			Term[] arguments = fromTermArray(((PrologStructure) term).getArguments());
 			return new Compound(functor, arguments);
 		case OBJECT_TYPE:
 			return JPL.newJRef(term.getObject());
+		case PARAMETER_TYPE:
+		case RESULT_TYPE:
+		case FIELD_TYPE:
+			name = ((PrologVariable) term).getName();
+			variable = sharedPrologVariables.get(name);
+			if (variable == null) {
+				variable = new Variable(name);
+				sharedPrologVariables.put(name, variable);
+			}
+			return variable;
+		case MIXIN_TYPE:
+		case CLASS_TYPE:
+			functor = removeQuoted(term.getFunctor());
+			arguments = fromTermArray(term.getArguments());
+			return new Compound(functor, arguments);
 		default:
 			throw new UnknownTermError(term);
 		}
