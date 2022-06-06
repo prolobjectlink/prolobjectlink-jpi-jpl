@@ -1,3 +1,7 @@
+Tis product link dynamically software licensed under GNU Library General Public License
+version 2.1 and Copyright (C) 2004  Paul Singleton, Copyright (C) 1998  Fred Dushin
+see http://www.fsf.org/copyleft/lgpl.html
+
 This product includes software licensed under The MIT License (MIT) and
 Copyright (c) 2012 - 2019, Prolobjectlink Project
 
