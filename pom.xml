@@ -54,7 +54,7 @@
 	</ciManagement>
 
 	<issueManagement>
-		<system>GitHub</system>
+		<system>GitHub Issues</system>
 		<url>https://github.com/prolobjectlink/${project.name}/issues</url>
 	</issueManagement>
 
